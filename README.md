@@ -17,9 +17,11 @@ The beta does not solve every integral. Some results are checked symbolically; o
 
 ## Screenshots
 
-![Symbolic calculus in the installed app](screenshots/engineering-workspace-calculus.png)
+![Calculus screen with a formatted antiderivative](screenshots/engineering-workspace-calculus.png)
 
-![Graph workspace in the installed app](screenshots/engineering-workspace-graph.png)
+![Batch workspace with commands, statuses and timings](screenshots/engineering-workspace-batch.png)
+
+![Full-width mathematical result from the batch workspace](screenshots/engineering-workspace-batch-result.png)
 
 ## Windows packages
 
