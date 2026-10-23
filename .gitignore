@@ -1,0 +1,9 @@
+# Publish release binaries through GitHub Releases, not Git history.
+*.exe
+*.zip
+SHA256SUMS.txt
+.env
+.env.*
+*.pem
+*.pfx
+*.key

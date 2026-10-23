@@ -1,0 +1,23 @@
+Engineering Workspace Freeware Licence
+Version 1.0 — 23 October 2026
+
+Copyright © 2026 Christiaan Petrus Naude. All rights reserved.
+
+Christiaan Petrus Naude grants you permission to download, install and use
+the compiled Engineering Workspace application without charge for personal,
+educational and commercial calculations. There are no subscriptions,
+advertisements or paid features.
+
+You may share unmodified copies of the official installer or portable
+package if this licence, the copyright notice and all included third-party
+notices remain with the package.
+
+This licence does not grant access to, ownership of, or permission to publish
+the source code. You may not distribute modified application binaries, sell
+the application, use the Engineering Workspace name to imply endorsement, or
+remove ownership notices. Reverse engineering is not permitted except to the
+extent that applicable law gives you a right that cannot be excluded.
+
+The application is provided as-is, without warranty, to the extent permitted
+by applicable law. The copyright holder retains all rights not expressly
+granted here. Third-party components are governed by their own licences.

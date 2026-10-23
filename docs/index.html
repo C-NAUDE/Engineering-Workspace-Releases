@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="Engineering Workspace is a free Windows application for symbolic mathematics, graphing, and engineering calculations. Calculations run offline.">
+  <title>Engineering Workspace — Mathematics, offline and free</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="screenshots.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Engineering Workspace home"><span class="brand-mark">∫</span><span>Engineering <strong>Workspace</strong></span></a>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#download">Download</a><a href="#about">About</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> Windows beta · Free download</p>
+        <h1 id="hero-heading">A workspace for the mathematics behind your ideas.</h1>
+        <p class="lead">Explore symbolic calculus, plot functions, and work through engineering calculations in one free desktop application. Your calculations run on your computer.</p>
+        <div class="hero-actions"><a class="button primary" href="#download">Download for Windows <span aria-hidden="true">↗</span></a><a class="button quiet" href="#features">Explore features</a></div>
+        <div class="hero-facts"><span>Free to use</span><span>Offline calculations</span><span>Windows 10 and 11</span></div>
+      </div>
+      <div class="workspace-preview" aria-label="Illustration of a mathematics workspace">
+        <div class="preview-title"><span class="preview-dot"></span> Engineering Workspace <span class="preview-label">Illustrative example</span></div>
+        <div class="preview-tabs"><span class="active">Calculus</span><span>Graph</span><span>Matrices</span></div>
+        <div class="preview-body"><div class="preview-kicker">INPUT</div><div class="preview-input">integrate 2*x*cos(x^2)</div><div class="preview-kicker">ANTIDERIVATIVE</div><div class="preview-answer">sin(x²) + C</div><div class="preview-note"><span class="check">✓</span> Differentiate the result to check it</div></div>
+      </div>
+    </section>
+    <section id="features" class="features" aria-labelledby="features-heading">
+      <div class="section-intro"><p class="eyebrow">WHAT'S INSIDE</p><h2 id="features-heading">From a quick derivative to a deeper investigation.</h2><p>Engineering Workspace brings its calculation tools together in a desktop interface, with a separate batch console for longer sets of commands.</p></div>
+      <div class="feature-grid">
+        <article><span class="feature-symbol">∫</span><h3>Symbolic calculus</h3><p>Integrate and differentiate expressions, then inspect the returned result and available verification details.</p></article>
+        <article><span class="feature-symbol">⌁</span><h3>Graph functions</h3><p>Plot functions and explore their shape with interactive graph controls.</p></article>
+        <article><span class="feature-symbol">▦</span><h3>Engineering tools</h3><p>Work with matrices, numerical calculations, and the app's chemistry workspace.</p></article>
+        <article><span class="feature-symbol">≡</span><h3>Batch work</h3><p>Run lists of calculations from the included console and save result reports in your user profile.</p></article>
+      </div>
+    </section>
+    <section class="screenshots" aria-labelledby="screenshots-heading">
+      <div class="section-intro"><p class="eyebrow">INSIDE THE APP</p><h2 id="screenshots-heading">A closer look at the workspace.</h2><p>These images show the installed Windows beta running a symbolic calculation and the graph workspace.</p></div>
+      <div class="screenshot-grid">
+        <figure><img src="screenshots/engineering-workspace-calculus.png" alt="Engineering Workspace showing the integral of x squared and its formatted antiderivative" loading="lazy"><figcaption>Symbolic calculus with formatted results</figcaption></figure>
+        <figure><img src="screenshots/engineering-workspace-graph.png" alt="Engineering Workspace graph page plotting sine and cosine curves" loading="lazy"><figcaption>Interactive function graphing</figcaption></figure>
+      </div>
+    </section>
+    <section class="principle" aria-labelledby="principle-heading"><div><p class="eyebrow">BUILT FOR YOUR DESKTOP</p><h2 id="principle-heading">Your work stays on your machine.</h2></div><p>The mathematics engine runs locally. Once the application and its required Windows components are installed, routine calculations do not need a connection or an account.</p></section>
+    <section id="download" class="download" aria-labelledby="download-heading"><div><p class="eyebrow">DOWNLOAD</p><h2 id="download-heading">Get Engineering Workspace.</h2><p>Download the free v0.1.0 Beta for Windows 10 or 11 x64. The installer sets up Start Menu access; the portable ZIP runs from an extracted folder. On a computer without Microsoft Edge WebView2 Runtime, the installer needs internet once to install that Windows component. Calculations then run locally.</p><div class="hero-actions"><a class="button primary" href="https://github.com/christiaannaude002-lgtm/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe">Download installer</a><a class="button quiet" href="https://github.com/christiaannaude002-lgtm/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip">Portable ZIP</a></div><p class="small"><a href="https://github.com/christiaannaude002-lgtm/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt">SHA-256 checksums</a> · <a href="LICENSE.txt">Freeware licence</a> · <a href="https://github.com/christiaannaude002-lgtm/Engineering-Workspace-Releases/issues">Report a problem</a></p></div><div class="release-card"><span class="release-status">v0.1.0 Beta</span><h3>Windows x64</h3><p>Free installer and portable ZIP.</p><p class="small">Windows 10 or 11 · No subscription · Offline calculations</p></div></section>
+    <section id="about" class="about" aria-labelledby="about-heading"><p class="eyebrow">ABOUT</p><h2 id="about-heading">Powerful mathematics should be accessible.</h2><p>Engineering Workspace is a free application for students and anyone who wants to explore mathematics and engineering calculations. It is currently in beta development. Some difficult integrals remain unsupported, and a reported result should be checked in context before use.</p></section>
+  </main>
+  <footer><span>© 2026 Christiaan Petrus Naude · <a href="LICENSE.txt">Freeware licence</a></span><span><a href="https://github.com/christiaannaude002-lgtm/Engineering-Workspace-Releases/issues">Feedback and bug reports</a></span></footer>
+</body>
+</html>
