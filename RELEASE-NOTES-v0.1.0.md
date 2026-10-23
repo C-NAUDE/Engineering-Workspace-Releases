@@ -10,7 +10,7 @@ Engineering Workspace is a free Windows desktop application for symbolic integra
 - Portable: download `EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip`, extract the folder, and run `Engineering Workspace.exe`.
 - Check the SHA-256 hashes in `SHA256SUMS.txt` against the downloaded files.
 
-Windows 10 or 11 x64 is the target. The Microsoft Edge WebView2 Runtime is required for formatted results. The installer includes Microsoft's bootstrapper for systems missing it; first-time setup on those systems needs internet. Clean Windows validation is still pending.
+Windows 10 or 11 x64 is the target. The Microsoft Edge WebView2 Runtime is required for formatted results. The installer includes Microsoft's bootstrapper for systems missing it; first-time setup on those systems needs internet. The owner reports that the portable ZIP was extracted and its EXE launched successfully on three other people's computers, with desktop shortcuts created from the EXE. The standard installer and its missing-WebView2 setup path have not been established by those portable runs.
 
 ## Beta limits
 
