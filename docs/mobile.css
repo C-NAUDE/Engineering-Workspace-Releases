@@ -1,0 +1,133 @@
+/* Phone layout overrides; desktop styles remain in their existing stylesheets. */
+@media (max-width: 600px) {
+  body { font-size: 16px; line-height: 1.55; }
+
+  .site-header {
+    position: sticky; top: 0; z-index: 20; height: auto; min-height: 0;
+    display: grid; grid-template-columns: 1fr; gap: 11px;
+    padding: 11px 16px 12px; background: #f7f9fb;
+    border-bottom: 1px solid #d8e1e9;
+  }
+  .brand { font-size: 16px; gap: 9px; }
+  .brand-mark { width: 32px; height: 32px; }
+  .site-header nav {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px;
+    width: 100%; font-size: 11px;
+  }
+  .site-header nav a {
+    min-height: 38px; display: grid; place-items: center; padding: 5px 2px;
+    border: 1px solid #d8e1e9; border-radius: 8px; background: white;
+    text-align: center; white-space: nowrap;
+  }
+
+  .hero {
+    min-height: 0; grid-template-columns: minmax(0, 1fr); gap: 26px;
+    padding: 48px 20px 38px;
+  }
+  .hero h1 { max-width: 15ch; font-size: clamp(35px, 10vw, 42px); line-height: 1.08; }
+  .hero .lead { margin: 18px 0 22px; font-size: 16px; line-height: 1.6; }
+  .hero-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .hero-actions .button { justify-content: center; min-height: 48px; }
+  .hero-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 24px; }
+  .hero-facts span, .hero-facts span:first-child {
+    border: 1px solid #536678; border-radius: 8px; padding: 7px 8px;
+    text-align: center; line-height: 1.35;
+  }
+  .workspace-preview { width: 100%; max-width: none; border-radius: 12px; }
+
+  .features, .about { padding: 58px 16px; }
+  .integrator { padding: 58px 16px; }
+  .section-intro h2, .integrator .section-intro h2 { font-size: 34px; line-height: 1.12; }
+  .section-intro > p:last-child, .integrator .section-intro > p:last-child,
+  .about > p:last-child { font-size: 15px; line-height: 1.6; }
+  .feature-grid { grid-template-columns: 1fr; gap: 11px; margin-top: 26px; }
+  .feature-grid article { min-height: 0; padding: 19px; }
+  .feature-grid h3 { margin: 11px 0 6px; }
+  .integrator-highlights { grid-template-columns: 1fr; gap: 10px; margin: 24px 0 32px; }
+  .integrator-highlights article { padding: 18px; }
+  .integrator-highlights h3 { margin: 8px 0 5px; }
+
+  .benchmark-panel { padding: 15px; border-radius: 12px; }
+  .benchmark-heading { align-items: stretch; gap: 10px; }
+  .benchmark-heading h3 { font-size: 25px; }
+  .benchmark-heading p:last-child, .benchmark-note { font-size: 13px; }
+  .benchmark-heading label { white-space: normal; }
+  .benchmark-kpis { grid-template-columns: 1fr; gap: 9px; margin: 17px 0; }
+  .benchmark-kpis > div { padding: 13px 15px; }
+  .benchmark-kpis strong { font-size: 25px; }
+  .chart-control { align-items: stretch; flex-direction: column; gap: 5px; }
+  .chart-control select, .benchmark-heading select { width: 100%; min-width: 0; }
+  .chart-card { padding: 12px 10px; margin: 13px 0 18px; border-radius: 9px; }
+  .chart-caption { font-size: 13px; line-height: 1.45; }
+  .chart-explanation { font-size: 12px; line-height: 1.45; }
+  .chart-legend { gap: 8px 13px; font-size: 11px; }
+  .benchmark-chart, .family-chart { width: 100%; min-width: 0; }
+  .chart-card { overflow: hidden; }
+  .benchmark-chart .compact-axis-label, .benchmark-chart .compact-value-label { font-size: 10px; }
+  .benchmark-chart .compact-axis-title { font-size: 11px; }
+  .benchmark-chart .compact-family-label { font-size: 10px; }
+  .benchmark-chart .compact-series-label { font-size: 10px; }
+  .family-benchmark { margin-top: 28px; padding-top: 22px; }
+  .family-benchmark h4 { font-size: 21px; line-height: 1.2; }
+  .family-benchmark > p { font-size: 13px; }
+
+  /* Wide desktop tables become readable cards with explicit field labels. */
+  .benchmark-table-wrap { overflow: visible; }
+  .benchmark-table { display: block; font-size: 13px; }
+  .benchmark-table thead { display: none; }
+  .benchmark-table tbody { display: grid; gap: 9px; }
+  .benchmark-table tbody tr {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px;
+    padding: 8px 10px; border: 1px solid #e1e9ee; border-radius: 9px;
+    background: #fff;
+  }
+  .benchmark-table tbody td { display: block; min-width: 0; padding: 7px 3px; border: 0; }
+  .benchmark-table tbody tr td:first-child {
+    grid-column: 1 / -1; border-bottom: 1px solid #e4ebef;
+    font-weight: 700; padding-bottom: 9px;
+  }
+  #batch-summary-table tbody tr:not(.benchmark-total-row) td:nth-child(2)::before { content: "Integrals"; }
+  #batch-summary-table tbody tr:not(.benchmark-total-row) td:nth-child(3)::before { content: "EW returned"; }
+  #batch-summary-table tbody tr:not(.benchmark-total-row) td:nth-child(4)::before { content: "EW time"; }
+  #batch-summary-table tbody tr:not(.benchmark-total-row) td:nth-child(5)::before { content: "SymPy returned"; }
+  #batch-summary-table tbody tr:not(.benchmark-total-row) td:nth-child(6)::before { content: "SymPy time"; }
+  #batch-summary-table tbody tr.benchmark-total-row td:nth-child(2)::before { content: "Integrals"; }
+  #batch-summary-table tbody tr.benchmark-total-row td:nth-child(3)::before { content: "EW returned"; }
+  #batch-summary-table tbody tr.benchmark-total-row td:nth-child(4)::before { content: "EW time"; }
+  #batch-summary-table tbody tr.benchmark-total-row td:nth-child(5)::before { content: "SymPy returned"; }
+  #batch-summary-table tbody tr.benchmark-total-row td:nth-child(6)::before { content: "SymPy time"; }
+  #family-summary-table tbody tr td:nth-child(2)::before { content: "Engineering Workspace"; }
+  #family-summary-table tbody tr td:nth-child(3)::before { content: "SymPy"; }
+  .benchmark-table tbody td:nth-child(n+2)::before {
+    display: block; margin-bottom: 2px; color: #647789;
+    font-size: 10px; font-weight: 600; line-height: 1.3;
+  }
+  #family-summary-table .detail-stat,
+  #batch-summary-table .detail-stat { white-space: normal; }
+  .benchmark-table .detail-stat small { font-size: 10px; }
+  #benchmark-rows tr { grid-template-columns: 1fr; }
+  #benchmark-rows tr td:first-child { overflow-wrap: anywhere; }
+  #benchmark-rows tr td:nth-child(n+2) { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+  #benchmark-rows tr td:nth-child(2)::before { content: "Family"; }
+  #benchmark-rows tr td:nth-child(3)::before { content: "Engineering Workspace"; }
+  #benchmark-rows tr td:nth-child(4)::before { content: "SymPy"; }
+  #benchmark-rows .math-cell { min-width: 0; max-width: 100%; font-size: 15px; }
+  #benchmark-rows mjx-container { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+
+  .screenshots { padding: 0 16px 58px; }
+  .screenshot-grid { grid-template-columns: 1fr; gap: 13px; margin-top: 24px; }
+  .screenshot-grid figure:last-child { grid-column: auto; }
+  .screenshot-grid figure { padding: 7px; border-radius: 11px; }
+  .screenshot-grid figcaption { padding: 9px 7px 5px; font-size: 12px; }
+  .principle { grid-template-columns: 1fr; gap: 7px; padding: 48px 20px; }
+  .principle h2, .download h2, .about h2 { font-size: 34px; }
+  .principle > p { font-size: 15px; line-height: 1.6; }
+  .download { grid-template-columns: 1fr; gap: 22px; padding: 58px 20px; }
+  .download .hero-actions { grid-template-columns: 1fr; }
+  .release-card { max-width: none; padding: 21px; }
+  footer { padding: 22px 18px; gap: 10px; font-size: 11px; }
+  .methodology { padding: 52px 18px 68px; }
+  .methodology h1 { font-size: clamp(30px, 8vw, 36px); line-height: 1.12; }
+  .methodology h2 { margin-top: 28px; font-size: 21px; }
+  .methodology p, .methodology li { font-size: 15px; line-height: 1.6; }
+}

@@ -4,7 +4,7 @@ Engineering Workspace is a free Windows desktop application for symbolic calculu
 
 **Download v0.1.0 Beta:** [Windows installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe) · [Portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip) · [SHA-256 checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt)
 
-[Visit the Engineering Workspace website](https://c-naude.github.io/Engineering-Workspace-Releases/).
+[Visit the Engineering Workspace website](https://engineeringwork.space/).
 
 ## What you can do
 
@@ -37,3 +37,4 @@ The program performs calculations on your computer. The application is free, but
 ## Feedback
 
 [Report a problem or suggest a feature](https://github.com/C-NAUDE/Engineering-Workspace-Releases/issues). When reporting a calculation problem, include the exact input, output, verification status and app version. Avoid sharing private calculations unless you choose to.
+

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
+  <meta name="description" content="How the Engineering Workspace integrator comparison was measured and what its results mean.">
+  <link rel="canonical" href="https://engineeringwork.space/benchmark-methodology.html">
+  <title>Integrator benchmark methodology — Engineering Workspace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="integrator.css?v=20261024-b39b">
+  <link rel="stylesheet" href="mobile.css?v=20261025-phone-v1">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">∫</span><span>Engineering <strong>Workspace</strong></span></a><nav aria-label="Main navigation"><a href="/#integrator">Integrator</a><a href="/#download">Download</a><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases">GitHub</a></nav></header>
+  <main class="methodology">
+    <p class="eyebrow">BENCHMARK NOTES</p>
+    <h1>How the integrator comparison was measured</h1>
+    <p>The table on the <a href="/#integrator">main website</a> is a fixed, interactive view of 15 illustrative expressions. Filtering the table does not run either solver. The cases were selected from a private 5,000-expression development benchmark to show different mathematical families and both supported and unsupported results. They are not a random or representative sample.</p>
+    <h2>Engineering Workspace</h2>
+    <p>Its values come from the v0.1.0 release benchmark report. Each value is the C++ application's reported engine time in milliseconds for one command from the batch run. The engine includes its own parsing, integration, and result verification work. “Completed” is the app's result status; “Unsupported” means it did not return a supported symbolic antiderivative.</p>
+    <h2>SymPy</h2>
+    <p><a href="https://www.sympy.org/">SymPy</a> 1.14.0 was run separately on the same Windows computer, one expression per fresh Python process. The displayed time begins before SymPy parses the expression and ends after <code>integrate</code> returns; Python process startup and import time are excluded. Each case had an eight-second wall-clock limit. A returned expression containing an unevaluated <code>Integral</code> is shown as “Unevaluated.” SymPy results in this sample were not separately checked for real-domain equivalence with the C++ results. No SymPy code is shipped with Engineering Workspace or this website.</p>
+    <h2>Interpreting the numbers</h2>
+    <p>The solvers use different measurement boundaries and were measured in separate runs. Individual timings can change with computer load, cache state, and software version. The table is useful for exploring specific expressions, but it does not establish an overall speed or coverage advantage. A returned antiderivative may have domain restrictions; check results in the context of your problem.</p>
+    <p><a href="integrator-benchmark.json">Download the displayed case data</a> · <a href="/#integrator">Back to the comparison</a></p>
+    <h2 id="full-batches">Batches 3–9 comparison</h2>
+    <p>The cumulative-time chart and batch table use all 5,521 commands from the seven local batch files. The installed Engineering Workspace development build and SymPy 1.14.0 ran every command with a 10-second limit per integral. Both indefinite and numeric-bound definite integrals are included. The chart plots the sum of per-integral times in the original batch order; it is not wall-clock time for the complete run. SymPy's cases ran in six concurrent worker processes, so its individual timings include the effects of that machine load. The timing starts after process startup and SymPy import, then includes parsing and integration. An error without a measured duration is counted as an attempted case but is omitted from timing sums and averages.</p>
+    <p>For the type comparison, a reproducible sample of 20 expressions was selected from each of five broad structural families, using seed 20261024. Engineering Workspace and SymPy received the same 100 expressions. Each family label is a heuristic classification based on expression syntax, not a claim about whether the integral has an elementary antiderivative. Rubi was not included in this edition's reported comparison.</p>
+    <p>“Returned” counts indicate that the solver returned an answer without an unresolved integral marker. They do not mean that SymPy's results were independently proved equivalent to every input. Engineering Workspace reports its own verification status. The two systems also use different measurement boundaries, so read the average-time plot with those limits in mind.</p>
+    <p>Source batch SHA-256 hashes and the full per-batch results are included in <a href="batch-3-9-benchmark.json">the downloadable result data</a>. This is a benchmark of the installed development build and does not describe the older v0.1.0 download.</p>
+  </main>
+  <footer><span>© 2026 Christiaan Petrus Naude</span><span><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases">GitHub releases</a></span></footer>
+</body>
+</html>

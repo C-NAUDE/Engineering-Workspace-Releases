@@ -3,22 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
   <meta name="theme-color" content="#101a2b">
-  <meta name="description" content="Engineering Workspace is a free Windows application for symbolic mathematics, graphing, and engineering calculations. Calculations run offline.">
-  <title>Engineering Workspace — Mathematics, offline and free</title>
+  <meta name="description" content="Download Engineering Workspace, a free offline Windows app for symbolic calculus, graphing, matrices, numerical methods, and engineering calculations.">
+  <link rel="canonical" href="https://engineeringwork.space/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Engineering Workspace">
+  <meta property="og:title" content="Engineering Workspace — Free offline mathematics app for Windows">
+  <meta property="og:description" content="Explore symbolic calculus, graphs, matrices, and engineering calculations in a free Windows desktop app.">
+  <meta property="og:url" content="https://engineeringwork.space/">
+  <meta property="og:image" content="https://engineeringwork.space/screenshots/engineering-workspace-calculus.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>window.MathJax = {tex: {inlineMath: [['\\(', '\\)']]}, svg: {fontCache: 'global'}, startup: {typeset: false}};</script>
+  <script defer src="vendor/MathJax/tex-svg.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Engineering Workspace",
+    "url": "https://engineeringwork.space/",
+    "description": "Free offline Windows application for symbolic calculus, graphing, matrices, numerical methods, and engineering calculations.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Windows 10 and Windows 11 (x64)",
+    "softwareVersion": "0.1.0 Beta",
+    "author": {"@type": "Person", "name": "Christiaan Petrus Naude"},
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+  }
+  </script>
+  <title>Engineering Workspace — Free offline mathematics app for Windows</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="screenshots.css">
+  <link rel="stylesheet" href="integrator.css?v=20261024-b39b">
+  <link rel="stylesheet" href="mobile.css?v=20261025-phone-v1">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Engineering Workspace home"><span class="brand-mark">∫</span><span>Engineering <strong>Workspace</strong></span></a>
-    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#download">Download</a><a href="#about">About</a></nav>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#integrator">Integrator</a><a href="#download">Download</a><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases">GitHub</a></nav>
   </header>
   <main id="top">
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-copy">
         <p class="eyebrow"><span class="pulse"></span> Windows beta · Free download</p>
-        <h1 id="hero-heading">A workspace for the mathematics behind your ideas.</h1>
+        <h1 id="hero-heading">Engineering Workspace for the mathematics behind your ideas.</h1>
         <p class="lead">Explore symbolic calculus, plot functions, and work through engineering calculations in one free desktop application. Your calculations run on your computer.</p>
         <div class="hero-actions"><a class="button primary" href="#download">Download for Windows <span aria-hidden="true">↗</span></a><a class="button quiet" href="#features">Explore features</a></div>
         <div class="hero-facts"><span>Free to use</span><span>Offline calculations</span><span>Windows 10 and 11</span></div>
@@ -37,18 +64,50 @@
         <article><span class="feature-symbol">≡</span><h3>Batch work</h3><p>Run lists of calculations from the included console and save result reports in your user profile.</p></article>
       </div>
     </section>
+    <section id="integrator" class="integrator" aria-labelledby="integrator-heading">
+      <div class="section-intro">
+        <p class="eyebrow">SYMBOLIC INTEGRATION</p>
+        <h2 id="integrator-heading">See what the integrator can do.</h2>
+        <p>The offline C++ engine works with polynomials, rational functions, trigonometric and hyperbolic expressions, exponentials, logarithms, and many algebraic radicals. It transforms expressions and checks candidate antiderivatives by differentiating them. Results can include domain conditions, and the app distinguishes completed, unsupported, and verification-limited outcomes.</p>
+      </div>
+      <div class="integrator-highlights">
+        <article><span>01</span><h3>Enter an integral</h3><p>Use the calculus screen for one expression or the batch workspace for a list of commands.</p></article>
+        <article><span>02</span><h3>Inspect the result</h3><p>Read a formatted antiderivative and the available verification details. Difficult expressions may remain unsupported.</p></article>
+        <article><span>03</span><h3>Measure your batch</h3><p>The batch workspace reports each command's status and engine time, then lets you export the report.</p></article>
+      </div>
+      <div id="batch-benchmarks" class="benchmark-panel batch-benchmark-panel" aria-labelledby="batch-benchmark-heading">
+        <div class="benchmark-heading"><div><p class="eyebrow">BATCHES 3–9</p><h3 id="batch-benchmark-heading">Time versus number of integrals</h3><p>The installed Engineering Workspace development build and SymPy 1.14.0 ran all 5,521 supplied integrals, including definite integrals with numeric bounds. The comparison below uses the completed runs from these two systems.</p></div></div>
+        <div class="benchmark-kpis" aria-label="Full benchmark totals"><div><span>Engineering Workspace</span><strong id="engine-time-total">Loading…</strong><small id="engine-result-total"></small></div><div><span>SymPy</span><strong id="sympy-time-total">Loading…</strong><small id="sympy-result-total"></small></div></div>
+        <div class="chart-control"><label for="batch-time-scale">Chart scale</label><select id="batch-time-scale"><option value="log" selected>Logarithmic · shows both lines</option><option value="linear">Linear</option></select></div>
+        <div class="chart-card"><p class="chart-caption">How the summed solving time grows as more integrals are processed</p><p class="chart-explanation">Lower lines mean less total solver time. The logarithmic scale keeps both systems visible despite their very different totals; switch to linear to see the absolute difference.</p><div class="chart-legend"><span class="legend-engine">Engineering Workspace</span><span class="legend-sympy">SymPy</span></div><svg id="batch-time-chart" class="benchmark-chart" viewBox="0 0 900 390" role="img" aria-label="Cumulative solver time versus number of integrals; lower lines represent less time"></svg></div>
+        <div class="benchmark-table-wrap"><table class="benchmark-table" id="batch-summary-table"><caption>Full-batch results</caption><thead><tr><th scope="col">Batch</th><th scope="col">Integrals</th><th scope="col">C++ returned</th><th scope="col">C++ time</th><th scope="col">SymPy returned</th><th scope="col">SymPy time</th></tr></thead><tbody><tr><td colspan="6">Loading full-batch results…</td></tr></tbody></table></div>
+        <div class="family-benchmark"><h4>Average time by integral type</h4><p>Each group below uses the same 20 randomly selected integrals for Engineering Workspace and SymPy. A timeout contributes the 10-second limit to the average. The horizontal scale is logarithmic.</p><div class="chart-card"><div class="chart-legend"><span class="legend-engine">Engineering Workspace</span><span class="legend-sympy">SymPy</span></div><svg id="family-time-chart" class="benchmark-chart family-chart" viewBox="0 0 900 460" role="img" aria-label="Average measured time per integral type on the same 100 sampled integrals"></svg></div><div class="benchmark-table-wrap"><table class="benchmark-table" id="family-summary-table"><caption>Same 20 cases per family · mean milliseconds and returned results</caption><thead><tr><th scope="col">Integral type</th><th scope="col">Engineering Workspace</th><th scope="col">SymPy</th></tr></thead><tbody><tr><td colspan="3">Loading family comparison…</td></tr></tbody></table></div></div>
+        <p class="benchmark-note">These timings measure two different solver implementations and include capped timeouts. SymPy's returned forms have not been independently verified against every input domain. “Returned” does not certify mathematical equivalence. <a href="benchmark-methodology.html#full-batches">Methods, caveats, and source details</a>.</p>
+      </div>
+      <div class="benchmark-panel" aria-labelledby="benchmark-heading">
+        <div class="benchmark-heading">
+          <div><p class="eyebrow">EXAMPLE EXPLORER</p><h3 id="benchmark-heading">Inspect individual examples</h3><p>Filter 15 illustrative integrals from the v0.1.0 release benchmark. The table shows recorded runs; changing the filter does not run either solver in your browser.</p></div>
+          <label for="benchmark-family">Integration family <select id="benchmark-family"><option value="all">All families</option></select></label>
+        </div>
+        <p class="benchmark-note">C++ times are the app's reported engine time for each case in the 5,000-integral release run. SymPy 1.14.0 was run separately on the same Windows computer; its times include parsing and integration, with an 8-second limit per case. These are different measurement boundaries and a hand-picked sample, so the numbers are not an overall speed ranking. “Completed” indicates a returned antiderivative; it is not a claim that every possible domain was proved. <a href="benchmark-methodology.html">Read the method and limitations</a>.</p>
+        <div class="benchmark-table-wrap"><table class="benchmark-table"><thead><tr><th scope="col">Integral</th><th scope="col">Family</th><th scope="col">C++ engine</th><th scope="col">SymPy</th></tr></thead><tbody id="benchmark-rows"><tr><td colspan="4">Loading comparison data…</td></tr></tbody></table></div>
+        <p id="benchmark-count" class="benchmark-count" aria-live="polite"></p>
+      </div>
+    </section>
     <section class="screenshots" aria-labelledby="screenshots-heading">
       <div class="section-intro"><p class="eyebrow">INSIDE THE APP</p><h2 id="screenshots-heading">A closer look at the workspace.</h2><p>These screenshots show the Windows app handling a calculus calculation and a 2,000-command batch.</p></div>
       <div class="screenshot-grid">
         <figure><img src="screenshots/engineering-workspace-calculus.png" alt="Calculus screen showing the integral of x squared and its formatted antiderivative" loading="lazy" width="1917" height="1018"><figcaption>Calculus and formatted results</figcaption></figure>
-        <figure><img src="screenshots/engineering-workspace-batch.png" alt="Batch workspace showing 2,000 processed commands, their statuses and a selected result" loading="lazy" width="1917" height="1018"><figcaption>Batch workspace with results and timings</figcaption></figure>
-        <figure><img src="screenshots/engineering-workspace-batch-result.png" alt="Full-width mathematical result from the batch workspace" loading="lazy" width="1917" height="1018"><figcaption>Full-width batch result</figcaption></figure>
+        <figure><img src="screenshots/engineering-workspace-batch.png?v=20261024-2356" alt="Batch workspace showing a selected command's result, verification details and timings after 2,000 commands" loading="lazy" width="1917" height="1018"><figcaption>Batch results and verification details</figcaption></figure>
+        <figure><img src="screenshots/engineering-workspace-batch-result.png?v=20261024-2356" alt="Full-width mathematical result from the batch workspace after 2,000 commands" loading="lazy" width="1917" height="1018"><figcaption>Full-width symbolic result</figcaption></figure>
       </div>
     </section>
     <section class="principle" aria-labelledby="principle-heading"><div><p class="eyebrow">BUILT FOR YOUR DESKTOP</p><h2 id="principle-heading">Your work stays on your machine.</h2></div><p>The mathematics engine runs locally. Once the application and its required Windows components are installed, routine calculations do not need a connection or an account.</p></section>
     <section id="download" class="download" aria-labelledby="download-heading"><div><p class="eyebrow">DOWNLOAD</p><h2 id="download-heading">Get Engineering Workspace.</h2><p>Download the free v0.1.0 Beta for Windows 10 or 11 x64. The installer sets up Start Menu access; the portable ZIP runs from an extracted folder. On a computer without Microsoft Edge WebView2 Runtime, the installer needs internet once to install that Windows component. Calculations then run locally.</p><div class="hero-actions"><a class="button primary" href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe">Download installer</a><a class="button quiet" href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip">Portable ZIP</a></div><p class="small"><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt">SHA-256 checksums</a> · <a href="LICENSE.txt">Freeware licence</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/issues">Report a problem</a></p></div><div class="release-card"><span class="release-status">v0.1.0 Beta</span><h3>Windows x64</h3><p>Free installer and portable ZIP.</p><p class="small">Windows 10 or 11 · No subscription · Offline calculations</p></div></section>
     <section id="about" class="about" aria-labelledby="about-heading"><p class="eyebrow">ABOUT</p><h2 id="about-heading">Powerful mathematics should be accessible.</h2><p>Engineering Workspace is a free application for students and anyone who wants to explore mathematics and engineering calculations. It is currently in beta development. Some difficult integrals remain unsupported, and a reported result should be checked in context before use.</p></section>
   </main>
-  <footer><span>© 2026 Christiaan Petrus Naude · <a href="LICENSE.txt">Freeware licence</a></span><span><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/issues">Feedback and bug reports</a></span></footer>
+  <footer><span>© 2026 Christiaan Petrus Naude · <a href="LICENSE.txt">Freeware licence</a> · <a href="vendor/MathJax/LICENSE">MathJax Apache 2.0 licence</a></span><span><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases">GitHub releases</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/issues">Feedback and bug reports</a></span></footer>
+  <script src="benchmark.js?v=20261024-b39b" defer></script>
+  <script src="batch-benchmarks.js?v=20261025-phone-v1" defer></script>
 </body>
 </html>
