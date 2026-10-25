@@ -186,16 +186,6 @@
         resizeTimer = setTimeout(() => { drawCumulative(data); drawFamilies(data.familyRows); }, 120);
       });
     })
-    .catch(() => {
-      for (const id of ["engine-time-total", "sympy-time-total"]) {
-        document.getElementById(id).textContent = "Unavailable";
-      }
-      for (const body of [batchBody, familyBody]) {
-        body.replaceChildren();
-        const row = document.createElement("tr");
-        row.append(tableCell("Benchmark results are temporarily unavailable."));
-        row.firstChild.colSpan = body === batchBody ? 6 : 3;
-        body.append(row);
-      }
-    });
+    // Keep the server-rendered benchmark values visible if the JSON request fails.
+    .catch(() => {});
 })();

@@ -22,6 +22,7 @@
     .then(({ cases }) => {
       const families = [...new Set(cases.map((item) => item.family))].sort();
       for (const family of families) {
+        if ([...familySelect.options].some((option) => option.value === family)) continue;
         const option = document.createElement("option");
         option.value = family;
         option.textContent = family;
@@ -50,11 +51,6 @@
       familySelect.addEventListener("change", render);
       render();
     })
-    .catch(() => {
-      rows.replaceChildren();
-      const tr = document.createElement("tr");
-      tr.append(cell("Comparison data is temporarily unavailable.", "benchmark-error"));
-      tr.firstChild.colSpan = 4;
-      rows.append(tr);
-    });
+    // Keep the server-rendered examples visible if data fetching fails.
+    .catch(() => {});
 })();
