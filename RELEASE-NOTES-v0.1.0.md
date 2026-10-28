@@ -2,6 +2,10 @@
 
 The first free Windows beta of Engineering Workspace.
 
+## Original Batch 10 baseline
+
+The original public beta completed **2,108 of 5,000 integrals (42.16%)**. Its recorded runtime was **1,738.66 seconds (28m 58.66s)**. This is a historical figure supplied from the owner's handover; it has not been freshly checked against the original benchmark log.
+
 Engineering Workspace is a free Windows desktop application for symbolic integration and differentiation, graphing, matrices, numerical work and engineering calculations. Its mathematics engine runs locally without an account or ongoing internet connection.
 
 ## Download and install

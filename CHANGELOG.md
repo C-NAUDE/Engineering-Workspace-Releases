@@ -12,6 +12,7 @@
 ## v0.1.0 Beta — 2026-10-23
 
 - First proposed public Windows package of Engineering Workspace.
+- Original Beta Batch 10 baseline: 2,108 of 5,000 integrals completed (42.16%), with a recorded runtime of 1,738.66 seconds (28m 58.66s). This figure comes from the owner's historical handover and was not freshly checked against the original benchmark log.
 - Optimized x64 GUI and batch console from the shared C++ engine.
 - Portable ZIP and per-user Inno Setup installer.
 - Offline local MathJax assets and self-contained standalone graph HTML.
