@@ -10,9 +10,9 @@ This release includes a substantial week of development on the symbolic integrat
 
 Both measurements below are for v0.1.1. The worker count is the number of CPU threads used for batch calculations.
 
-**Depth 1 (normal run):** four workers (four CPU threads), 3,553 of 5,000 integrals completed in about 200 seconds elapsed.
+**Depth 1 (normal run):** four workers (four CPU threads), 3,553 of 5,000 integrals completed; summed engine time was **379.34 seconds** and wall-clock elapsed time was **199.30 seconds**.
 
-**Depth 4 (experimental run):** four workers, 3,555 completed. The report records 686.40 summed engine seconds (about 600 seconds) and 371.57 seconds wall-clock elapsed. This experimental timing is not the normal depth-1 runtime.
+**Depth 4 (experimental run):** four workers (four CPU threads), 3,555 of 5,000 integrals completed; summed engine time was **686.40 seconds** and wall-clock elapsed time was **371.57 seconds**. This experimental timing is not the normal depth-1 runtime.
 
 These figures describe the two specific v0.1.1 runs, not a guarantee for other hardware or inputs. Numerical agreement remains distinct from symbolic verification.
 
