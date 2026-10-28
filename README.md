@@ -6,6 +6,8 @@ Engineering Workspace is a free Windows desktop application for symbolic calculu
 
 [Visit the Engineering Workspace website](https://engineeringwork.space/).
 
+Read the [v0.1.1 release notes](RELEASE-NOTES-v0.1.1.md) or the [full version changelog](CHANGELOG.md).
+
 ## What you can do
 
 - Integrate and differentiate expressions and inspect available verification details.

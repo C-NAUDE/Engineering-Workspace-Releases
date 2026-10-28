@@ -2,10 +2,12 @@
 
 ## v0.1.1 Beta — 2026-10-28
 
-- Updated the Windows installer and portable package from the local development build.
-- The installer now always creates a desktop shortcut, including when upgrading.
-- Renamed the included batch console to `Engineering Workspace Console.exe` and removed the old MATLAB branding from the shipped app.
-- Kept the application closed source and free to install and use.
+- Substantially developed the symbolic integration engine over the week leading up to this release. Work spans integration-rule dispatch and recognition, algebraic and binomial substitutions, radical expressions, logarithmic and exponential forms, trigonometric products, simplification, and verification/domain reporting.
+- Expanded batch execution and reporting support alongside the integration work.
+- In the Batch 10 output supplied for this release, the engine completed 3,553 of 5,000 expressions. That run reported 1,367 unsupported, 17 domain errors, 24 verification failures, 38 verification-limited results, and 1 resource limit; summed engine time was 686.40 seconds (371.57 seconds elapsed). These are figures from one run, not a promise that every expression is solved or that another machine will reproduce the timing.
+- Updated the Windows installer and portable package; the installer creates a desktop shortcut, including on upgrade.
+- Renamed the included batch console to `Engineering Workspace Console.exe` and removed legacy MATLAB branding from the shipped app.
+- The application remains closed source and free to install and use.
 
 ## v0.1.0 Beta — 2026-10-23
 

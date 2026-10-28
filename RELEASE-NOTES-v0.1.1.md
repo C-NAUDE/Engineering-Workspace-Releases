@@ -2,6 +2,12 @@
 
 Engineering Workspace is a free Windows desktop application for symbolic integration and differentiation, graphing, matrices, numerical work and engineering calculations. Calculations run locally. The application is closed source; its source code is not included in the downloads.
 
+## What's new in v0.1.1
+
+This release includes a substantial week of development on the symbolic integration engine, not just packaging and branding changes. The work extends general-purpose integration paths for algebraic and binomial substitutions, radical forms, logarithmic and exponential expressions, trigonometric products, and composition/product-rule recognition. Simplification, verification and domain reporting, and batch execution/reporting were also updated.
+
+The supplied Batch 10 run completed 3,553 of 5,000 expressions. It reported 1,367 unsupported results, 17 domain errors, 24 verification failures, 38 verification-limited results and 1 resource limit. Summed engine time was 686.40 seconds; wall elapsed time was 371.57 seconds. These are results from that particular run, not an independently repeated release benchmark or a guarantee for other systems. Numerical agreement is identified separately from symbolic verification.
+
 ## Download and install
 
 - Installer: `EngineeringWorkspace-Setup-v0.1.1.exe`. It installs for the current user, adds Start Menu access, and creates a desktop shortcut.
