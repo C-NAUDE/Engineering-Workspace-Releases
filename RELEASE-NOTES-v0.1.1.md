@@ -6,6 +6,8 @@ Engineering Workspace is a free Windows desktop application for symbolic integra
 
 This release includes a substantial week of development on the symbolic integration engine, not just packaging and branding changes. The work extends general-purpose integration paths for algebraic and binomial substitutions, radical forms, logarithmic and exponential expressions, trigonometric products, and composition/product-rule recognition. Simplification, verification and domain reporting, and batch execution/reporting were also updated.
 
+The application's branding was updated, and the batch console was renamed to `Engineering Workspace Console.exe`.
+
 ## Batch 10 performance context
 
 Both measurements below are for v0.1.1. The worker count is the number of CPU threads used for batch calculations.
