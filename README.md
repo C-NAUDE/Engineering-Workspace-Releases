@@ -2,7 +2,7 @@
 
 Engineering Workspace is a free Windows desktop application for symbolic calculus, graphing, matrices, numerical work and engineering calculations. Calculations run locally; no account or subscription is required.
 
-**Download v0.1.0 Beta:** [Windows installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe) · [Portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip) · [SHA-256 checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt)
+**Download v0.1.1 Beta:** [Windows installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/EngineeringWorkspace-Setup-v0.1.1.exe) · [Portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/EngineeringWorkspace-Portable-v0.1.1-Windows-x64.zip) · [SHA-256 checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/SHA256SUMS.txt)
 
 [Visit the Engineering Workspace website](https://c-naude.github.io/Engineering-Workspace-Releases/).
 
@@ -25,8 +25,8 @@ The beta does not solve every integral. Some results are checked symbolically; o
 
 ## Windows packages
 
-- `EngineeringWorkspace-Setup-v0.1.0.exe`: normal per-user installer, with Start Menu access and optional desktop shortcut.
-- `EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip`: extract the folder and run `Engineering Workspace.exe`.
+- `EngineeringWorkspace-Setup-v0.1.1.exe`: normal per-user installer, with Start Menu and desktop shortcuts.
+- `EngineeringWorkspace-Portable-v0.1.1-Windows-x64.zip`: extract the folder and run `Engineering Workspace.exe`.
 
 Both target Windows 10/11 x64. The Microsoft Edge WebView2 Runtime is needed for the formatted result pane. The standard installer includes a small Microsoft bootstrapper that installs the runtime only if missing; that first-time step needs internet. The portable ZIP expects the runtime to be present already.
 
