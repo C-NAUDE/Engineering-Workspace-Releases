@@ -1,0 +1,157 @@
+{
+  "cppSource": "Reports/batch10_release_v010.jsonl",
+  "sympyVersion": "1.14.0",
+  "sympyTimeoutSeconds": 8,
+  "cases": [
+    {
+      "case": 1,
+      "family": "Rational",
+      "expression": "x^5/(9-x^12)",
+      "cppStatus": "Completed",
+      "cppMs": 1.724,
+      "sympyStatus": "Completed",
+      "sympyMs": 87.366,
+      "latexExpression": "\\frac{x^{5}}{9 - x^{12}}"
+    },
+    {
+      "case": 3,
+      "family": "Trigonometric",
+      "expression": "sin(x)^2*cot(x)^5",
+      "cppStatus": "Completed",
+      "cppMs": 1.695,
+      "sympyStatus": "Completed",
+      "sympyMs": 69.341,
+      "latexExpression": "\\sin^{2}{\\left(x \\right)} \\cot^{5}{\\left(x \\right)}"
+    },
+    {
+      "case": 4,
+      "family": "Polynomial",
+      "expression": "x*(x^2+2*x+1)",
+      "cppStatus": "Completed",
+      "cppMs": 0.364,
+      "sympyStatus": "Completed",
+      "sympyMs": 49.03,
+      "latexExpression": "x \\left(x^{2} + 2 x + 1\\right)"
+    },
+    {
+      "case": 5,
+      "family": "Algebraic radical",
+      "expression": "(3*x+2)^5*(5*x+3)^2/sqrt(1-2*x)",
+      "cppStatus": "Completed",
+      "cppMs": 1.311,
+      "sympyStatus": "Completed",
+      "sympyMs": 548.031,
+      "latexExpression": "\\frac{\\left(3 x + 2\\right)^{5} \\left(5 x + 3\\right)^{2}}{\\sqrt{1 - 2 x}}"
+    },
+    {
+      "case": 7,
+      "family": "Trigonometric",
+      "expression": "1/(-tan(x)^2+sec(x)^2)",
+      "cppStatus": "Completed",
+      "cppMs": 0.967,
+      "sympyStatus": "Unevaluated",
+      "sympyMs": 277.783,
+      "latexExpression": "\\frac{1}{- \\tan^{2}{\\left(x \\right)} + \\sec^{2}{\\left(x \\right)}}"
+    },
+    {
+      "case": 13,
+      "family": "Trigonometric",
+      "expression": "sec(x)^2/cot(x)",
+      "cppStatus": "Completed",
+      "cppMs": 0.365,
+      "sympyStatus": "Completed",
+      "sympyMs": 56.816,
+      "latexExpression": "\\frac{\\sec^{2}{\\left(x \\right)}}{\\cot{\\left(x \\right)}}"
+    },
+    {
+      "case": 14,
+      "family": "Trigonometric radical",
+      "expression": "sqrt(sin(x))/sqrt(cos(x))",
+      "cppStatus": "Unsupported",
+      "cppMs": 1.047,
+      "sympyStatus": "Timeout (>8 s)",
+      "sympyMs": null,
+      "latexExpression": "\\frac{\\sqrt{\\sin{\\left(x \\right)}}}{\\sqrt{\\cos{\\left(x \\right)}}}"
+    },
+    {
+      "case": 18,
+      "family": "Rational",
+      "expression": "(x^3-1600)/x^3",
+      "cppStatus": "Completed",
+      "cppMs": 1.134,
+      "sympyStatus": "Completed",
+      "sympyMs": 60.465,
+      "latexExpression": "\\frac{x^{3} - 1600}{x^{3}}"
+    },
+    {
+      "case": 20,
+      "family": "Trigonometric",
+      "expression": "cos(x)*cos(3*x)",
+      "cppStatus": "Completed",
+      "cppMs": 0.094,
+      "sympyStatus": "Completed",
+      "sympyMs": 131.307,
+      "latexExpression": "\\cos{\\left(x \\right)} \\cos{\\left(3 x \\right)}"
+    },
+    {
+      "case": 35,
+      "family": "Rational",
+      "expression": "1/(x^7*(x^2+1)^3)",
+      "cppStatus": "Completed",
+      "cppMs": 0.177,
+      "sympyStatus": "Completed",
+      "sympyMs": 88.983,
+      "latexExpression": "\\frac{1}{x^{7} \\left(x^{2} + 1\\right)^{3}}"
+    },
+    {
+      "case": 49,
+      "family": "Inverse function",
+      "expression": "sqrt(1-x^2)*asin(x)",
+      "cppStatus": "Unsupported",
+      "cppMs": 1.61,
+      "sympyStatus": "Completed",
+      "sympyMs": 428.061,
+      "latexExpression": "\\sqrt{1 - x^{2}} \\operatorname{asin}{\\left(x \\right)}"
+    },
+    {
+      "case": 65,
+      "family": "Exponential",
+      "expression": "x^4*exp(-x)",
+      "cppStatus": "Completed",
+      "cppMs": 0.059,
+      "sympyStatus": "Completed",
+      "sympyMs": 68.079,
+      "latexExpression": "x^{4} e^{- x}"
+    },
+    {
+      "case": 67,
+      "family": "Exponential",
+      "expression": "1/(exp(x)+exp(-x))",
+      "cppStatus": "Completed",
+      "cppMs": 1.706,
+      "sympyStatus": "Completed",
+      "sympyMs": 77.552,
+      "latexExpression": "\\frac{1}{e^{x} + e^{- x}}"
+    },
+    {
+      "case": 68,
+      "family": "Algebraic radical",
+      "expression": "x^5/sqrt(x^3+1)",
+      "cppStatus": "Completed",
+      "cppMs": 0.647,
+      "sympyStatus": "Completed",
+      "sympyMs": 111.769,
+      "latexExpression": "\\frac{x^{5}}{\\sqrt{x^{3} + 1}}"
+    },
+    {
+      "case": 80,
+      "family": "Exponential",
+      "expression": "x^2*exp(-x)",
+      "cppStatus": "Completed",
+      "cppMs": 0.042,
+      "sympyStatus": "Completed",
+      "sympyMs": 65.443,
+      "latexExpression": "x^{2} e^{- x}"
+    }
+  ]
+}
