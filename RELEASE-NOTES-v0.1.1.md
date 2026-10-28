@@ -8,11 +8,13 @@ This release includes a substantial week of development on the symbolic integrat
 
 ## Batch 10 performance context
 
-The worker count is the number of CPU threads used for batch calculations. The previous v0.1.0 run was reported by the owner as 3,555 completed on one worker (one CPU thread) in about 600 seconds.
+Both measurements below are for v0.1.1. The worker count is the number of CPU threads used for batch calculations.
 
-The supplied v0.1.1 depth-1 run used four workers (four CPU threads). Its final summary reports 3,550 completed, 1,371 unsupported, 17 domain errors, 24 verification failures, 38 verification-limited results and 1 resource limit. It took 379.34 seconds summed across engine work and 199.30 seconds wall-clock elapsed (about 200 seconds).
+**Depth 1 (normal run):** four workers (four CPU threads), 3,553 of 5,000 integrals completed in about 200 seconds elapsed.
 
-A separate depth-4 experimental run, also with four workers, reports 3,553 completed, 1,367 unsupported, 17 domain errors, 24 verification failures, 38 verification-limited results and 1 resource limit. It took 686.40 summed engine seconds and 371.57 seconds wall-clock elapsed. Depth 4 is experimental; this longer timing is not the normal depth-1 result. Each figure describes a particular run and hardware configuration, not a guarantee. Numerical agreement remains distinct from symbolic verification.
+**Depth 4 (experimental run):** four workers, 3,555 completed. The report records 686.40 summed engine seconds (about 600 seconds) and 371.57 seconds wall-clock elapsed. This experimental timing is not the normal depth-1 runtime.
+
+These figures describe the two specific v0.1.1 runs, not a guarantee for other hardware or inputs. Numerical agreement remains distinct from symbolic verification.
 
 ## Download and install
 
