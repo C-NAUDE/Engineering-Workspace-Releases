@@ -30,6 +30,11 @@ The beta does not solve every integral. Some results are checked symbolically; o
 
 Both target Windows 10/11 x64. The Microsoft Edge WebView2 Runtime is needed for the formatted result pane. The standard installer includes a small Microsoft bootstrapper that installs the runtime only if missing; that first-time step needs internet. The portable ZIP expects the runtime to be present already.
 
+## Previous versions
+
+- [v0.1.0 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.0): [installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe), [portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip), and [checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt).
+- [v0.1.0 release notes](RELEASE-NOTES-v0.1.0.md). The full version history is in [CHANGELOG.md](CHANGELOG.md).
+
 ## Privacy and ownership
 
 The program performs calculations on your computer. The application is free, but its source code is privately owned and is **not** open source. The compiled application is distributed under the [Engineering Workspace Freeware Licence](LICENSE.txt). Copyright © 2026 Christiaan Petrus Naude.
