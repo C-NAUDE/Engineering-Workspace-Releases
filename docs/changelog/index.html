@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Workspace version history</title>
+<meta name="description" content="Engineering Workspace release history and changelogs for v0.1.0, v0.1.1 and v0.1.2.">
+<style>body{margin:0;background:#f4f7fb;color:#142238;font:16px/1.6 system-ui,Segoe UI,sans-serif}
+main{max-width:960px;margin:auto;padding:32px 20px 80px}a{color:#1559ca}h1,h2,h3{line-height:1.25}
+h1{font-size:2.2rem}h2{margin-top:2.5rem}h3{margin-top:1.8rem}
+blockquote{margin:1.3rem 0;padding:.1rem 1rem;border-left:4px solid #4086f4;background:#eaf2ff}
+table{border-collapse:collapse;display:block;overflow:auto;width:100%}th,td{padding:.5rem .7rem;border:1px solid #ccd7e5;text-align:left}
+nav{margin-bottom:1.4rem}code{overflow-wrap:anywhere}@media(max-width:600px){main{padding:20px 16px 50px}h1{font-size:1.8rem}}</style>
+</head><body><main><nav><a href="/">← Engineering Workspace</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases">All downloads</a></nav>
+<h1>Engineering Workspace — Public Changelog</h1>
+<p><strong>Coverage:</strong> v0.1.0, v0.1.1 and v0.1.2<br />
+<strong>Updated:</strong> 5 November 2026<br />
+<strong>Product:</strong> Engineering Workspace — free, offline symbolic mathematics software<br />
+<strong>Distribution:</strong> Public release notes only. Engineering Workspace is <strong>closed-source</strong>.</p>
+<blockquote>
+<p>This is a public-facing changelog. It deliberately excludes source code, source patches, internal file paths, proprietary implementation methods, development prompts and private project structure. It describes user-visible functionality and measured results, not how the algorithms are implemented.</p>
+</blockquote>
+<h2>Version history</h2>
+<h3>v0.1.2 Beta — 5 November 2026</h3>
+<ul>
+<li>Expanded the symbolic integration and verification work described below. The latest archived Batch 10 checkpoint completed <strong>4,209 of 5,000</strong> integrals: <strong>3,534 symbolically verified</strong> and <strong>675 numerically accepted</strong>.</li>
+<li>Refined the desktop batch workspace, equation display, and distribution packaging.</li>
+<li>Kept calculations local and offline. Optional update notifications use the official release manifest only when the user enables automatic checks or asks for a manual check.</li>
+<li><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/blob/main/RELEASE-NOTES-v0.1.2.md">v0.1.2 release notes</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.2">v0.1.2 downloads</a></li>
+</ul>
+<h3>v0.1.1 Beta — 28 October 2026</h3>
+<ul>
+<li>Substantially extended integration coverage across algebraic and binomial substitutions, radicals, logarithmic and exponential forms, trigonometric products, and composition recognition. Updated simplification, verification, domain reporting, and batch execution.</li>
+<li>Recorded <strong>3,553 of 5,000</strong> completions at depth 1 with four workers (199.30 seconds wall time) and <strong>3,555 of 5,000</strong> at depth 4 with four workers (371.57 seconds wall time). These are distinct settings and runs.</li>
+<li>Updated application branding and the companion console name.</li>
+<li><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/blob/main/RELEASE-NOTES-v0.1.1.md">v0.1.1 release notes</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.1">v0.1.1 downloads</a></li>
+</ul>
+<h3>v0.1.0 Beta — 23 October 2026</h3>
+<ul>
+<li>First public Windows beta with local symbolic calculus, graphing, matrices, numerical work, chemistry tools, and batch calculations.</li>
+<li>Original Batch 10 baseline: <strong>2,108 of 5,000</strong> completions (42.16%) in <strong>1,738.66 seconds</strong>, as recorded in the original release history.</li>
+<li><a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/blob/main/RELEASE-NOTES-v0.1.0.md">v0.1.0 release notes</a> · <a href="https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.0">v0.1.0 downloads</a></li>
+</ul>
+<hr />
+<h2>Highlights since v0.1.1</h2>
+<ul>
+<li>Symbolic integration coverage increased from a reported <strong>3,555 of 5,000</strong> test integrals at the v0.1.1 launch to <strong>4,209 of 5,000</strong> in the latest archived, fully audited development checkpoint.</li>
+<li>The latest audited checkpoint reports <strong>3,534 symbolically verified</strong> and <strong>675 numerically accepted</strong> integral results.</li>
+<li>Expanded coverage for advanced algebraic, rational, exponential, logarithmic, trigonometric, hyperbolic and special-function integrals.</li>
+<li>Strengthened answer verification, including better recognition of equivalent mathematical expressions and more conservative handling of real-domain restrictions.</li>
+<li>Improved the desktop batch-workspace experience, equation readability and interaction performance.</li>
+<li>Continued to support <strong>offline execution</strong> without relying on a cloud-based solving service.</li>
+</ul>
+<p><strong>Benchmark comparison note:</strong> The original 3,555 launch figure used maximum search depth. Later checkpoints were measured under their own archived benchmark configurations. The <strong>+654</strong> figure is a comparison of reported completions, not a controlled same-settings performance or regression measurement against the original v0.1.1 executable.</p>
+<hr />
+<h2>Release and development history</h2>
+<h3>v0.1.1 — Initial release reference (approximately 1 November 2026)</h3>
+<p><strong>Reported Batch 10 results:</strong>
+- Standard search depth: <strong>3,553 / 5,000</strong>.
+- Maximum search depth: <strong>3,555 / 5,000</strong> (<strong>71.10%</strong>).</p>
+<p><strong>Available capabilities at launch:</strong>
+- Offline C++ symbolic integration and result verification.
+- Common and advanced calculus integration methods.
+- Desktop interface and a companion console application.
+- Batch processing and benchmark reporting.
+- Windows installer and portable distribution.</p>
+<h3>Early post-launch improvements — 3,740 and 3,764 checkpoints</h3>
+<p><strong>Recorded milestones:</strong> <strong>3,740 → 3,764 / 5,000</strong>.</p>
+<ul>
+<li>Continued expanding integral coverage and repairing regressions.</li>
+<li>Improved the consistency of supported results across the batch tests.</li>
+<li>Recorded a no-lost-completions comparison for the increase from 3,740 to 3,764.</li>
+</ul>
+<p><strong>Historical limitation:</strong> A complete original v0.1.1 source-and-commit history was not available for the interval from 3,555 to 3,740. Specific features cannot reliably be assigned to that period.</p>
+<h3>Recovery and reliability improvements — 3,803 checkpoint</h3>
+<p><strong>Benchmark:</strong> <strong>3,803 / 5,000</strong> (<strong>76.06%</strong>), up <strong>39</strong> from 3,764.</p>
+<ul>
+<li>Improved handling of additional exponential, radical, trigonometric and advanced special-function integration cases.</li>
+<li>Recovered previously unsupported families while retaining previously completed benchmark cases.</li>
+<li>A fresh full-batch rerun confirmed <strong>zero lost completions</strong> against the preceding checkpoint.</li>
+</ul>
+<h3>Further integration coverage — 3,827 checkpoint</h3>
+<p><strong>Benchmark:</strong> <strong>3,827 / 5,000</strong> (<strong>76.54%</strong>), up <strong>24</strong> from 3,803.</p>
+<ul>
+<li>Extended coverage for more challenging rational and algebraic expressions.</li>
+<li>Improved support for advanced special-function answers.</li>
+<li>Full-batch comparison recorded <strong>zero lost completions</strong> against 3,803.</li>
+</ul>
+<h3>Major advanced-integration expansion — 4,193 checkpoint</h3>
+<p><strong>Benchmark:</strong> <strong>4,193 / 5,000</strong> (<strong>83.86%</strong>), up <strong>366</strong> from 3,827.</p>
+<ul>
+<li>Introduced much broader support for advanced algebraic expressions through special-function results.</li>
+<li>Improved handling of integrals that previously failed because their expressions could not be reduced to simpler supported families.</li>
+<li>Preserved all <strong>3,827</strong> previously completed benchmark cases in the full audit.</li>
+<li>Expanded mathematical coverage beyond elementary antiderivatives; some accepted answers use advanced special-function notation.</li>
+</ul>
+<p><strong>Verification qualification:</strong> At this milestone, <strong>3,042</strong> completions were marked symbolically verified and <strong>1,151</strong> were numerically accepted. Two results previously marked symbolic were classified as numerical in this experimental version. Numerical acceptance is not the same as a symbolic proof.</p>
+<h3>Verification reliability upgrade — 4,196 checkpoint</h3>
+<p><strong>Benchmark:</strong> <strong>4,196 / 5,000</strong> (<strong>83.92%</strong>), up <strong>3</strong> from 4,193.</p>
+<ul>
+<li>Improved exact validation of certain advanced special-function results.</li>
+<li>Strengthened real-domain and branch-sensitive verification safeguards.</li>
+<li>Added clearer categorization for expressions without a valid real integration domain.</li>
+<li>Upgraded <strong>80</strong> previously numerical results to the engine's symbolic-verification category.</li>
+<li>Full-batch checks recorded <strong>zero lost completions</strong> and <strong>zero symbolic-verification downgrades</strong> relative to 4,193.</li>
+</ul>
+<p><strong>Classification at this checkpoint:</strong> <strong>3,125 symbolic</strong>, <strong>1,071 numerical</strong>.</p>
+<h3>Stable verifier checkpoint — 4,209 completed / 3,512 symbolic</h3>
+<p><strong>Benchmark:</strong> <strong>4,209 / 5,000</strong> (<strong>84.18%</strong>), up <strong>13</strong> from 4,196.</p>
+<ul>
+<li>Improved recognition of mathematically equivalent expressions, including more advanced transcendental and algebraic results.</li>
+<li>Expanded exact symbolic-verification coverage for additional answer families.</li>
+<li>Upgraded <strong>374</strong> previously numerical results to the engine's symbolic-verification category.</li>
+<li>Reduced the verification-limited classification from <strong>54 to 43</strong> in the archived audit.</li>
+<li>Preserved all previously completed cases with <strong>zero lost completions</strong> and <strong>zero symbolic downgrades</strong>.</li>
+</ul>
+<p><strong>Classification:</strong> <strong>3,512 symbolic</strong>, <strong>697 numerical</strong>.</p>
+<h3>Latest audited verifier checkpoint — 4,209 completed / 3,534 symbolic</h3>
+<p><strong>Benchmark:</strong> <strong>4,209 / 5,000</strong> (<strong>84.18%</strong>); completion total unchanged.</p>
+<ul>
+<li>Broadened symbolic verification of mixed hyperbolic, exponential and trigonometric expressions.</li>
+<li>Upgraded <strong>22 additional</strong> previously numerical results to the symbolic category.</li>
+<li>Retained the same <strong>4,209 completions</strong>, with <strong>zero lost completions</strong> and <strong>zero symbolic downgrades</strong> in the full 5,000-case comparison.</li>
+</ul>
+<p><strong>Complete outcome breakdown:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th style="text-align: right;">Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Symbolically verified by the engine</td>
+<td style="text-align: right;"><strong>3,534</strong></td>
+</tr>
+<tr>
+<td>Numerically accepted</td>
+<td style="text-align: right;"><strong>675</strong></td>
+</tr>
+<tr>
+<td>Unsupported</td>
+<td style="text-align: right;">681</td>
+</tr>
+<tr>
+<td>Verification limited</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td>Verification failed</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td>Real-domain errors</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>5,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important:</strong> “Symbolically verified” describes the result of Engineering Workspace's internal verification; it is not a claim of external formal proof for every mathematical branch or complex-valued continuation.</p>
+<h3>Windows desktop interface and distribution updates — 4 November 2026</h3>
+<p><strong>Visual and usability fixes:</strong>
+- Restored the larger, results-first batch workspace layout.
+- Corrected low-contrast mathematical notation in light-theme equation displays.
+- Preserved the existing batch-control sliders and their expected interactions.
+- Improved responsiveness when viewing, selecting and scrolling through large batches.
+- Reduced unnecessary visual updates while batch progress changes.</p>
+<p><strong>Testing and release packaging:</strong>
+- GUI behaviour was exercised using desktop browser previews at common window sizes.
+- The repaired GUI was packaged for integration into the Windows desktop application.
+- Windows distribution and release scripts successfully generated a <strong>v0.1.1-named installer</strong> and portable package from later development sources.</p>
+<p><strong>Performance qualification:</strong> A local synthetic UI test showed substantial improvement in the cost of processing large-result updates, but this does not establish a universal end-to-end latency result on every Windows computer. Exact pixel-for-pixel equivalence to the original design reference was not independently certified.</p>
+<p><strong>Windows benchmark observation:</strong> A subsequent desktop screenshot showed <strong>4,215 / 5,000</strong>, with different search depth, timeout and worker settings. It is <strong>not presented as a new audited release milestone</strong>; the visible category totals also had a one-case discrepancy requiring investigation.</p>
+<hr />
+<h2>Benchmark milestones at a glance</h2>
+<table>
+<thead>
+<tr>
+<th>Checkpoint</th>
+<th style="text-align: right;">Completed / 5,000</th>
+<th style="text-align: right;">Symbolic</th>
+<th style="text-align: right;">Numerical</th>
+<th>Audit qualification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original v0.1.1 launch (maximum depth)</td>
+<td style="text-align: right;">3,555</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Historical release result</td>
+</tr>
+<tr>
+<td>Early development</td>
+<td style="text-align: right;">3,740</td>
+<td style="text-align: right;">3,024</td>
+<td style="text-align: right;">716</td>
+<td>Archived baseline</td>
+</tr>
+<tr>
+<td>Regression repairs</td>
+<td style="text-align: right;">3,764</td>
+<td style="text-align: right;">3,029</td>
+<td style="text-align: right;">735</td>
+<td>Compared against 3,740</td>
+</tr>
+<tr>
+<td>Recovery checkpoint</td>
+<td style="text-align: right;">3,803</td>
+<td style="text-align: right;">3,037</td>
+<td style="text-align: right;">766</td>
+<td>Full rerun; no lost completions</td>
+</tr>
+<tr>
+<td>Experimental checkpoint</td>
+<td style="text-align: right;">3,827</td>
+<td style="text-align: right;">3,044</td>
+<td style="text-align: right;">783</td>
+<td>Full comparison; no lost completions</td>
+</tr>
+<tr>
+<td>Advanced integration expansion</td>
+<td style="text-align: right;">4,193</td>
+<td style="text-align: right;">3,042</td>
+<td style="text-align: right;">1,151</td>
+<td>No lost completions; two symbolic downgrades</td>
+</tr>
+<tr>
+<td>Verifier upgrade</td>
+<td style="text-align: right;">4,196</td>
+<td style="text-align: right;">3,125</td>
+<td style="text-align: right;">1,071</td>
+<td>No losses or symbolic downgrades</td>
+</tr>
+<tr>
+<td>Stable verifier</td>
+<td style="text-align: right;">4,209</td>
+<td style="text-align: right;">3,512</td>
+<td style="text-align: right;">697</td>
+<td>No losses or symbolic downgrades</td>
+</tr>
+<tr>
+<td>Latest audited verifier</td>
+<td style="text-align: right;"><strong>4,209</strong></td>
+<td style="text-align: right;"><strong>3,534</strong></td>
+<td style="text-align: right;"><strong>675</strong></td>
+<td>No losses or symbolic downgrades</td>
+</tr>
+</tbody>
+</table>
+<p>Benchmark counts are from the recorded checkpoints. Different settings and platforms can affect time and completion results; the table is not a controlled runtime-speed comparison.</p>
+<h2>Current limitations and planned improvements</h2>
+<ul>
+<li>Some integrals require advanced special-function output rather than elementary closed forms.</li>
+<li><strong>675</strong> completed integrals remain numerically accepted rather than symbolically verified in the latest archived checkpoint.</li>
+<li><strong>43</strong> verification-limited and <strong>28</strong> verification-failed cases remain unresolved.</li>
+<li><strong>681</strong> integrals are still unsupported and <strong>39</strong> are categorized as real-domain errors.</li>
+<li>Verification over restricted real intervals and mathematically sensitive branches requires continued care.</li>
+<li>Further improvements are planned for the clarity, practical usability and reliability of returned mathematical expressions.</li>
+<li>Benchmark consistency, responsiveness and Windows-specific testing remain ongoing development priorities.</li>
+</ul>
+<hr />
+<h2>Source availability and publication policy</h2>
+<p>Engineering Workspace is <strong>closed-source</strong>. This changelog intentionally provides only public release-level information about capabilities, fixes, test results and known limitations. It does <strong>not</strong> include or license source code, proprietary algorithms, implementation details, patches, internal file inventories, private development records, or instructions to reconstruct the software.</p>
+<p>© Engineering Workspace. All rights reserved. Publication of this changelog does not grant rights to the software's source code.</p></main></body></html>
