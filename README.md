@@ -2,11 +2,11 @@
 
 Engineering Workspace is a free Windows desktop application for symbolic calculus, graphing, matrices, numerical work and engineering calculations. Calculations run locally; no account or subscription is required.
 
-**Download v0.1.1 Beta:** [Windows installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/EngineeringWorkspace-Setup-v0.1.1.exe) · [Portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/EngineeringWorkspace-Portable-v0.1.1-Windows-x64.zip) · [SHA-256 checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.1/SHA256SUMS.txt)
+**Download v0.1.2 Beta:** [Windows installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.2/EngineeringWorkspace-Setup-v0.1.2.exe) · [Portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.2/EngineeringWorkspace-Portable-v0.1.2-Windows-x64.zip) · [SHA-256 checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.2/SHA256SUMS.txt)
 
 [Visit the Engineering Workspace website](https://engineeringwork.space/).
 
-Read the [v0.1.1 release notes](RELEASE-NOTES-v0.1.1.md) or the [full version changelog](CHANGELOG.md).
+Read the [v0.1.2 release notes](RELEASE-NOTES-v0.1.2.md) or the [full version changelog](CHANGELOG.md).
 
 ## What you can do
 
@@ -27,12 +27,14 @@ The beta does not solve every integral. Some results are checked symbolically; o
 
 ## Windows packages
 
-- `EngineeringWorkspace-Setup-v0.1.1.exe`: normal per-user installer, with Start Menu and desktop shortcuts.
-- `EngineeringWorkspace-Portable-v0.1.1-Windows-x64.zip`: extract the folder and run `Engineering Workspace.exe`.
+- `EngineeringWorkspace-Setup-v0.1.2.exe`: normal per-user installer, with Start Menu and desktop shortcuts.
+- `EngineeringWorkspace-Portable-v0.1.2-Windows-x64.zip`: extract the folder and run `Engineering Workspace.exe`.
 
 Both target Windows 10/11 x64. The Microsoft Edge WebView2 Runtime is needed for the formatted result pane. The standard installer includes a small Microsoft bootstrapper that installs the runtime only if missing; that first-time step needs internet. The portable ZIP expects the runtime to be present already.
 
 ## Previous versions
+
+- [v0.1.1 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.1): installer, portable ZIP, and checksums.
 
 - [v0.1.0 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.0): [installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe), [portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip), and [checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt).
 - [v0.1.0 release notes](RELEASE-NOTES-v0.1.0.md). The full version history is in [CHANGELOG.md](CHANGELOG.md).
