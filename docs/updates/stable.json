@@ -6,7 +6,7 @@
   "release_date": "2026-11-05",
   "release_page": "https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.2",
   "download_url": "https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.2/EngineeringWorkspace-Setup-v0.1.2.exe",
-  "sha256": "9d47cb490b82bdc0d1bf54f7919e48fa893198f7e26b32c78129253c037ced4e",
+  "sha256": "e742bc29e203d0f46b7e18c7b78e876a64f5da806a4b450abe31d6b094f42b6a",
   "changelog_url": "https://engineeringwork.space/changelog/",
   "changelog_summary": [
     "Expanded symbolic integration coverage",
