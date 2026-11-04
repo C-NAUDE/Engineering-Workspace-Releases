@@ -1,11 +1,35 @@
 # Engineering Workspace — Public Changelog
 
-**Coverage:** v0.1.1 launch through the November 2026 development checkpoints  
+**Coverage:** v0.1.0, v0.1.1 and v0.1.2  
 **Updated:** 5 November 2026  
 **Product:** Engineering Workspace — free, offline symbolic mathematics software  
 **Distribution:** Public release notes only. Engineering Workspace is **closed-source**.
 
 > This is a public-facing changelog. It deliberately excludes source code, source patches, internal file paths, proprietary implementation methods, development prompts and private project structure. It describes user-visible functionality and measured results, not how the algorithms are implemented.
+
+## Version history
+
+### v0.1.2 Beta — 5 November 2026
+
+- Expanded the symbolic integration and verification work described below. The latest archived Batch 10 checkpoint completed **4,209 of 5,000** integrals: **3,534 symbolically verified** and **675 numerically accepted**.
+- Refined the desktop batch workspace, equation display, and distribution packaging.
+- Kept calculations local and offline. Optional update notifications use the official release manifest only when the user enables automatic checks or asks for a manual check.
+- [v0.1.2 release notes](RELEASE-NOTES-v0.1.2.md) · [v0.1.2 downloads](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.2)
+
+### v0.1.1 Beta — 28 October 2026
+
+- Substantially extended integration coverage across algebraic and binomial substitutions, radicals, logarithmic and exponential forms, trigonometric products, and composition recognition. Updated simplification, verification, domain reporting, and batch execution.
+- Recorded **3,553 of 5,000** completions at depth 1 with four workers (199.30 seconds wall time) and **3,555 of 5,000** at depth 4 with four workers (371.57 seconds wall time). These are distinct settings and runs.
+- Updated application branding and the companion console name.
+- [v0.1.1 release notes](RELEASE-NOTES-v0.1.1.md) · [v0.1.1 downloads](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.1)
+
+### v0.1.0 Beta — 23 October 2026
+
+- First public Windows beta with local symbolic calculus, graphing, matrices, numerical work, chemistry tools, and batch calculations.
+- Original Batch 10 baseline: **2,108 of 5,000** completions (42.16%) in **1,738.66 seconds**, as recorded in the original release history.
+- [v0.1.0 release notes](RELEASE-NOTES-v0.1.0.md) · [v0.1.0 downloads](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.0)
+
+---
 
 ## Highlights since v0.1.1
 

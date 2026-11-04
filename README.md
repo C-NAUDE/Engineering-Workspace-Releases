@@ -34,7 +34,7 @@ Both target Windows 10/11 x64. The Microsoft Edge WebView2 Runtime is needed for
 
 ## Previous versions
 
-- [v0.1.1 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.1): installer, portable ZIP, and checksums.
+- [v0.1.1 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.1): installer, portable ZIP, and checksums. [Read its release notes](RELEASE-NOTES-v0.1.1.md).
 
 - [v0.1.0 Beta release](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.0): [installer](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Setup-v0.1.0.exe), [portable ZIP](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/EngineeringWorkspace-Portable-v0.1.0-Windows-x64.zip), and [checksums](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/download/v0.1.0/SHA256SUMS.txt).
 - [v0.1.0 release notes](RELEASE-NOTES-v0.1.0.md). The full version history is in [CHANGELOG.md](CHANGELOG.md).
