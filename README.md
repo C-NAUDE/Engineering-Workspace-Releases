@@ -23,6 +23,8 @@ The beta does not solve every integral. Some results are checked symbolically; o
 
 ![Batch workspace with commands, statuses and timings](screenshots/engineering-workspace-batch.png)
 
+![Batch verification and domain details](screenshots/engineering-workspace-batch-details.png)
+
 ![Full-width mathematical result from the batch workspace](screenshots/engineering-workspace-batch-result.png)
 
 ## Windows packages
