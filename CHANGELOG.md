@@ -1,6 +1,6 @@
 # Engineering Workspace — Public Changelog
 
-**Coverage:** v0.1.0, v0.1.1 and v0.1.2  
+**Coverage:** v0.1.0, v0.1.1, v0.1.2 and v0.1.3  
 **Updated:** 5 November 2026  
 **Product:** Engineering Workspace — free, offline symbolic mathematics software  
 **Distribution:** Public release notes only. Engineering Workspace is **closed-source**.
@@ -8,6 +8,13 @@
 > This is a public-facing changelog. It deliberately excludes source code, source patches, internal file paths, proprietary implementation methods, development prompts and private project structure. It describes user-visible functionality and measured results, not how the algorithms are implemented.
 
 ## Version history
+
+### v0.1.3 Beta — 5 November 2026
+
+- Made new published builds identifiable by a new version number. Fresh installs check for updates automatically, with an option to turn checks off; existing installations retain their setting.
+- The in-app **Install update** button downloads the official installer, verifies its SHA-256 checksum against the release feed, closes the app, and starts the installer. Calculations stay local.
+- No integrator algorithm or benchmark result changed in this maintenance release.
+- [v0.1.3 release notes](RELEASE-NOTES-v0.1.3.md) · [v0.1.3 downloads](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.3)
 
 ### v0.1.2 Beta — 5 November 2026
 
