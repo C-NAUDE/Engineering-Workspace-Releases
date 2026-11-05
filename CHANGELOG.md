@@ -13,7 +13,7 @@
 
 - Expanded the symbolic integration and verification work described below. The latest archived Batch 10 checkpoint completed **4,209 of 5,000** integrals: **3,534 symbolically verified** and **675 numerically accepted**.
 - Refined the desktop batch workspace, equation display, and distribution packaging.
-- Kept calculations local and offline. Optional update notifications use the official release manifest only when the user enables automatic checks or asks for a manual check.
+- Added an optional update notification system. Use **? → Check for updates now**, or enable automatic checks in the same menu. When a newer stable release is available, a dismissible in-app card shows what's new and offers **Later**, **View changelog**, and **View update**. The app reads the official HTTPS release manifest; it does not download or install updates automatically. Calculations remain local and work offline.
 - [v0.1.2 release notes](RELEASE-NOTES-v0.1.2.md) · [v0.1.2 downloads](https://github.com/C-NAUDE/Engineering-Workspace-Releases/releases/tag/v0.1.2)
 
 ### v0.1.1 Beta — 28 October 2026
